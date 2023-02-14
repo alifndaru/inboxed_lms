@@ -1,0 +1,14 @@
+.message{
+    top: 10px;
+}
+p.message{
+    font-size: 15px;
+}
+
+.btn-submit{
+    margin-top: 15px;
+}
+a.forgot{
+    text-decoration-color:#1a1a20 ;
+    text-decoration: underline;
+}

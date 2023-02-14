@@ -1,0 +1,184 @@
+
+/* ============================= */
+/* ||      STYLE - ENV        || */
+/* ============================= */
+.red {
+    background-color: red;
+}
+
+@font-face {
+    font-family: 'Lexend';
+    src: url(../assets/font/Lexend-VariableFont_wght.ttf);
+}
+
+body {
+    font-family: 'Lexend', sans-serif;
+}
+
+input[type=text] {
+    /* width: 352px; */
+    height: 40px;
+    border-radius: 12px;
+    padding-left: 35px;
+    background: #2D3260;
+    border: 1px solid red;
+    color: #E7F6F2;
+    margin-bottom: 19px;
+    font-size: 18px;
+}
+input[type=text]::placeholder {
+    color: red;
+}
+
+input[type=email] {
+    /* width: 352px; */
+    height: 40px;
+    border-radius: 12px;
+    padding-left: 35px;
+    background: #2D3260;
+    border: 1px solid red;
+    color: #E7F6F2;
+    margin-bottom: 19px;
+    font-size: 18px;
+}
+input[type=email]::placeholder {
+    color: red;
+}
+
+input[type=password] {
+    /* width: 352px; */
+    height: 40px;
+    border-radius: 12px;
+    padding-left: 35px;
+    background: #2D3260;
+    border: 1px solid red;
+    color: #E7F6F2;
+    margin-bottom: 19px;
+    font-size: 18px;
+}
+input[type=password]::placeholder {
+    color: red;
+}
+
+input[type=date] {
+    /* width: 352px; */
+    height: 40px;
+    border-radius: 12px;
+    padding-left: 35px;
+    background: #2D3260;
+    border: 1px solid #E7F6F2;
+    color: #E7F6F2;
+    margin-bottom: 19px;
+    font-size: 18px;
+}
+
+input[type=number] {
+    /* width: 352px; */
+    height: 40px;
+    border-radius: 12px;
+    padding-left: 35px;
+    background: #2D3260;
+    border: 1px solid red;
+    color: #E7F6F2;
+    margin-bottom: 19px;
+    font-size: 18px;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+}
+input[type=number]::placeholder {
+    color: red;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+select {
+    /* width: 352px; */
+    /* padding: 8px 0px 8px 0px; */
+    height: 40px;
+    border-radius: 12px;
+    padding-left: 10px;
+    background: #2D3260;
+    border: 1px solid #E7F6F2;
+    color: #E7F6F2;
+    margin-bottom: 19px;
+    font-size: 18px;
+}
+
+
+/* =====RADIO===== */
+
+.c-radio {
+    /* background-color: red; */
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+.c-radio .inp {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+.container input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+}
+
+input[type=submit] {
+    width: 340px;
+    height: 40px;
+    border-radius: 12px;
+    background: #E7F6F2;
+    border: 0px solid #E7F6F2;
+    color: #2D3260;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 18px;
+
+}

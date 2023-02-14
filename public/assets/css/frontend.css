@@ -1,0 +1,813 @@
+/* ============================= */
+/* ||          RESET          || */
+/* ============================= */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe, 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ============================= */
+/* ||      STYLE - ENV        || */
+/* ============================= */
+.red {
+    background-color: red;
+}
+
+@font-face {
+    font-family: 'Lexend';
+    src: url(../font/Lexend-VariableFont_wght.ttf);
+    /* color: #fff; */
+}
+
+.h4{
+    color: #fff;
+}
+
+
+body {
+    font-family: 'Lexend', sans-serif;
+}
+input[type=text] {
+    height: 40px;
+    border-radius: 12px;
+    background: #2D3260;
+    border: 1px solid #E7F6F2;
+    color: #E7F6F2;
+    margin-bottom: 19px;
+    font-size: 18px;
+}
+
+input[type=email] {
+    height: 40px;
+    border-radius: 12px;
+    background: #2D3260;
+    border: 1px solid #E7F6F2;
+    color: #E7F6F2;
+    margin-bottom: 19px;
+    font-size: 18px;
+}
+
+input[type=password] {
+    height: 40px;
+    border-radius: 12px;
+    background: #2D3260;
+    border: 1px solid #E7F6F2;
+    color: #E7F6F2;
+    margin-bottom: 19px;
+    font-size: 18px;
+}
+
+input[type=date] {
+    height: 40px;
+    border-radius: 12px;
+    background: #2D3260;
+    border: 1px solid #E7F6F2;
+    color: #E7F6F2;
+    margin-bottom: 19px;
+    font-size: 18px;
+}
+
+input[type=number] {
+    height: 40px;
+    border-radius: 12px;
+    background: #2D3260;
+    border: 1px solid #E7F6F2;
+    color: #E7F6F2;
+    margin-bottom: 19px;
+    font-size: 18px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+select {
+    height: 40px;
+    border-radius: 12px;
+    background: #2D3260;
+    border: 1px solid #E7F6F2;
+    color: #E7F6F2;
+    margin-bottom: 19px;
+    font-size: 18px;
+}
+
+
+.wid-inp-0{
+    width: 335px;
+}
+.wid-inp {
+    width: 300px;
+}
+
+.wid-inp-1{
+    width: 400px;
+}
+
+.wid-inp-2 {
+    width: 200px;
+}
+
+.wid-inp-3 {
+    width: 123px;
+}
+
+.wid-inp-4 {
+    width: 100px;
+}
+
+.wid-inp-5{
+    width: 170px;
+}
+
+.wid-inp-6{
+    width: 340px;
+}
+
+.heg-inp-1{
+    font-size: 35px;
+}
+
+.heg-inp-2{
+    font-size: 325px;
+}
+
+.heg-inp-3{
+    height: 10px;
+}
+
+
+
+/* =====RADIO===== */
+
+.c-radio {
+    /* background-color: red; */
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.c-radio .inp {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+.container input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+}
+
+::placeholder {
+    color: #E7F6F2;
+    font-size: 16px;
+
+}
+
+.button-reset{
+    height: 30px;
+    border-radius: 12px;
+    background: #E7F6F2;
+    border: 0px solid #E7F6F2;
+    color: #2D3260;
+    font-weight: bolder;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+
+}
+
+input[type=submit] {
+    height: 30px;
+    border-radius: 12px;
+    background: #E7F6F2;
+    border: 0px solid #E7F6F2;
+    color: #2D3260;
+    font-weight: bolder;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+
+}
+
+input[type=button] {
+    border-radius: 12px;
+    background: #E7F6F2;
+    border: 0px solid #E7F6F2;
+    color: #2D3260;
+    font-weight: bolder;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+
+}
+
+button{
+    height: 20px;
+    border-radius: 12px;
+    background: #E7F6F2;
+    border: 0px solid #E7F6F2;
+    color: #2D3260;
+    font-weight: bolder;
+    text-align: center;
+    cursor: pointer;
+    font-size: px;
+
+}
+
+.btn{
+    padding: 5px;
+    border-radius: 20px 20px;
+    display: inline-block;
+    transform: scale(1);
+    transition: all .2s;
+}
+
+/* MODAL */
+/* .modal-container{
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    backdrop-filter: blur(3px);
+    display: flex;
+    background-color: rgba(0, 0, 0, .5);
+    justify-content: center;
+    align-items: center;
+} */
+
+p {
+    font-size: 18px;
+}
+
+a {
+    font-style: normal;
+    text-decoration: none;
+    color: #E7F6F2;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 45px;
+}
+
+h3 {
+    font-size: 36px;
+    font-style: bold;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+.abs {
+    position: absolute;
+}
+
+.rlt {
+    position: relative;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.block {
+    display: block;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.f-kanan{
+    float: right;
+}
+
+.f-kiri{
+    float: left;
+}
+
+.auto{
+    margin: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+/* ============================= */
+/* ||     STYLE - MARGIN      || */
+/* ============================= */
+
+.m-kiri-1 {
+    margin-left: 15px;
+}
+
+.m-kiri-2{
+    margin-left: 30px;
+}
+
+.m-kiri-3{
+    margin-left: 20px;
+}
+.m-kiri-5{
+    margin-left: 190px;
+}
+
+.m-atas-1{
+    margin-top: 10px;
+}
+
+.m-atas-2 {
+    margin-top: 20px;
+}
+
+.m-atas-3 {
+    margin-top: 23px;
+}
+
+.m-atas-4{
+    margin-top: 43px;
+}
+
+.m-atas-5{
+    margin-top: 50px;
+}
+
+.m-atas-6{
+    margin-top: 70px;
+}
+.m-kanan-1 {
+    margin-right: 15px;
+}
+
+.m-kanan-2 {
+    margin-right: 50px;
+}
+
+.m-bawah-1 {
+    margin-bottom: 10px;
+}
+
+.m-bawah-3 {
+    margin-bottom: 23px;
+}
+
+.m-bawah-4{
+    margin-bottom: 44px;
+}
+
+.m-bawah-5{
+    margin-bottom: 100px;
+}
+
+
+/* ============================= */
+/* ||     STYLE - PADDING     || */
+/* ============================= */
+
+.pad-atas-1 {
+    padding-bottom: 10px;
+}
+.pad-kiri{
+
+   padding-left: 20px;
+}
+
+.auto{
+    margin: auto;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+
+.pad-bawah-10 {
+    padding-bottom: 10px;
+}
+
+.pad-bawah-20{
+padding-bottom: 20px;
+}
+
+.pad-bawah-30{
+    padding-bottom: 30px;
+}
+
+
+.input {
+    padding-left: 29px;
+}
+
+
+/* ============================= */
+/* ||     STYLE - HEAD        || */
+/* ============================= */
+
+.head {
+    color: #E7F6F2;
+}
+
+.pos1 {
+    top: 76px;
+    left: 125px;
+}
+
+.garis {
+    border: 5px;
+    border-style: solid;
+    position: absolute;
+    border-radius: 10px;
+    width: 200px;
+    color: #E7F6F2;
+    left: 450px;
+    top: 150px;
+}
+.garis-1 {
+    border: 5px;
+    border-style: solid;
+    position: absolute;
+    border-radius: 10px;
+    width: 200px;
+    color: #E7F6F2;
+    left: 450px;
+    top: 170px;
+}
+
+.geser1 {
+    padding-left: 28px;
+    font-weight: bold;
+}
+
+.text-h {
+    width: 652px;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 56px;
+    text-align: center;
+    color: #E7F6F2;
+}
+
+
+
+/* ============================= */
+/* ||    STYLE - CONTAINER    || */
+/* ============================= */
+
+.container form button{
+    font-family: 'Lexend', sans-serif;
+    margin-bottom: 10px;
+    padding: 5px 0;
+    height: 50px;
+    width: 340px;
+    border: none;
+    background-color:#2979ff;
+    font-size: 18px;
+    color: blue;
+    background: #fff;
+    border-radius: 10px;
+    font-style: bold;
+    cursor: pointer;
+}
+
+.container-kanan{
+    position: absolute;
+    right: 45px;
+    top: 72px;
+}
+
+.container-tengah{
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+}
+
+.main-container {
+    border: 1px solid #2D3260;
+    width: 400px;
+    /* position: absolute; */
+    /* right: 45px;
+    top: 72px; */
+    /* height: 50px; */
+
+    border-radius: 25px;
+    background-color: #2D3260;
+}
+
+.logo-reg {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 30px;
+    right: 145px;
+    /* overflow: hidden;  */
+    background-image: url(../img/color.png);
+    background-size: 100%; 
+    
+    background-repeat: no-repeat; 
+    z-index: 1;
+
+}
+
+.logo-kunci{
+    position: absolute;
+    width: 30px;
+    height: 200px;
+    top: 30px;
+    right: 180px;
+    /* overflow: hidden;  */
+    background-image: url(../img/key.png);
+    background-size: 100%; 
+    
+    background-repeat: no-repeat; 
+    z-index: 1;
+
+}
+
+.logo-email {
+    position: absolute;
+    width: 30px;
+    height: 200px;
+    top: 30px;
+    right: 180px;
+    /* overflow: hidden;  */
+    background-image: url(../img/email.png);
+    background-size: 100%; 
+    
+    background-repeat: no-repeat; 
+    z-index: 1;
+
+
+}
+
+
+.head-container {
+    color: #E7F6F2;
+    position: relative;
+}
+
+
+
+.lingkaran {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    /* line-height: 50px; */
+    text-align: center;
+    /* font-size: 20px; */
+    /* position: relative; */
+}
+
+.wait-ling {
+    color: #000000;
+    background-color: #545958;
+}
+
+.process-ling {
+    color: #000000;
+    background-color: #E7F6F2;
+}
+
+.pos-l1 {
+    left: 128px;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+
+.garis-ling {
+    width: 54px;
+    height: 2px;
+    background-color: #545958;
+    position: relative;
+    bottom: 25px;
+    left: 50px;
+}
+
+.kanan1 {
+    position: absolute;
+    margin-left: 10px;
+}
+
+/* ============================= */
+/* ||      STYLE - FOOT       || */
+/* ============================= */
+
+.foot {
+    font-size: 18px;
+    color: #E7F6F2;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.foot-part {
+    margin-left: 25px;
+    margin-bottom: 73px;
+}
+
+.logo-triple-s {
+    position: fixed;
+    width: 120px;
+    height: 89px;
+    left: 200px;
+    bottom: 22px;
+    background-image: url(../img/triples.png);
+    overflow: hidden;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* background-color: red; */
+}
+
+.logo-ikadin {
+    position: fixed;
+    width: 120px;
+    height: 89px;
+    left: 340px;
+    bottom: 35px;
+    background-image: url(../img/ikadin.png);
+    overflow: hidden;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    /* background-color: red; */
+}
+.hover-link:hover {
+    text-decoration: underline;
+}

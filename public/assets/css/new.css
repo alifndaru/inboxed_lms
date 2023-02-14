@@ -1,0 +1,218 @@
+/* ================================== */
+/* ========== STEP - HTML =========== */
+/* ================================== */
+
+.kembalasi {
+    background-image: url(../img/back.png);
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-color: red;
+
+}
+
+.f-black {
+    color: #000000;
+}
+
+.gambar-80x80 {
+    width: 80px;
+    height: 80px;
+}
+
+.line-h-80 {
+    line-height: 80px;
+}
+
+.m-kiri-85 {
+    margin-left: 85px;
+}
+
+.langkah-verifikasi {
+    width: 100%;
+    height: 290px;
+    margin-top: 25px;
+}
+
+.langkah-verifikasi .langkah {
+    width: 246px;
+    height: 290px;
+    border: 1px solid #E7F6F2;
+    border-radius: 16px;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-left: 15px;
+    ;
+}
+
+.langkah-verifikasi .langkah .judul-langkah {
+    background-color: #D9D9D9;
+    width: 99px;
+    height: 26px;
+    border-radius: 16px;
+    font-size: 14px;
+    line-height: 26px;
+    margin: auto;
+    padding-left: 15px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+.langkah-verifikasi .langkah .judul {
+    /* background-color: red; */
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.langkah-verifikasi .langkah img {
+    margin-top: 20px;
+    margin: auto;
+    /* align-items: center; */
+    width: 100px;
+
+}
+
+.langkah-verifikasi
+.langkah
+.gambar-langkah{
+    text-align: center;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.langkah-verifikasi
+.langkah 
+.penjelasan{
+    font-size: 14px;
+    margin: auto;
+    text-align: center;
+    width: 200px;
+}
+
+.justify{
+    text-align: justify;
+}
+
+/* ================================== */
+/* ======== FORMAT CONTAINER ======== */
+/* ================================== */
+
+.form-cont-pop-450x500{
+    border: 1px solid #2D3260;
+    width: 450px;;
+    border-radius: 25px;
+    background-color: #2D3260;
+    box-sizing: border-box;
+}
+
+
+.sukses{
+    color: #26D3A4;
+}
+
+.gagal{
+    color: #FF0000;
+}
+
+
+/* ================================== */
+/* ========= INPUT - GENDER ========= */
+/* ================================== */
+input[type=radio]:not(old) {
+    width: 50px;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    opacity: 0;
+}
+
+input[type=radio]:not(old)+label {
+    display: inline-block;
+    margin-left: -1em;
+    line-height: 1.5em;
+}
+
+input[type=radio]:not(old)+label>span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    /* border           : 0.0625em solid rgb(192,192,192); */
+    border-radius: 50%;
+    background: #E7F6F2;
+    background-image: -moz-linear-gradient(#E7F6F2, #E7F6F2);
+    background-image: -ms-linear-gradient(#E7F6F2, #E7F6F2);
+    background-image: -o-linear-gradient(#E7F6F2, #E7F6F2);
+    background-image: -webkit-linear-gradient(#E7F6F2, #E7F6F2);
+    background-image: linear-gradient(#E7F6F2, #E7F6F2);
+    vertical-align: bottom;
+}
+
+input[type=radio]:not(old):checked+label>span {
+    background-image: -moz-linear-gradient(#E7F6F2, #E7F6F2);
+    background-image: -ms-linear-gradient(#E7F6F2, #E7F6F2);
+    background-image: -o-linear-gradient(#E7F6F2, #E7F6F2);
+    background-image: -webkit-linear-gradient(#E7F6F2, #E7F6F2);
+    background-image: linear-gradient(#E7F6F2, #E7F6F2);
+}
+
+input[type=radio]:not(old):checked+label>span>span {
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin: 2.2px;
+    border: 0.0625em solid rgb(115, 153, 77);
+    border-radius: 50%;
+    background: #2D3260;
+    background-image: -moz-linear-gradient(#2D3260, #2D3260);
+    background-image: -ms-linear-gradient(#2D3260, #2D3260);
+    background-image: -o-linear-gradient(#2D3260, #2D3260);
+    background-image: -webkit-linear-gradient(#2D3260, #2D3260);
+    background-image: linear-gradient(#2D3260, #2D3260);
+}
+
+
+
+
+.cover {
+    background-size: cover
+}
+
+.box-sizing {
+    box-sizing: border-box;
+}
+
+
+/* ================================== */
+/* ======= INPUT - FILE(DIV) ======== */
+/* ================================== */
+
+.uploader{
+    width: 641px;
+    height: 96px;
+    border: 3px dashed white;
+    box-sizing: border-box;
+    border-radius: 12px;
+
+}
+
+.main-container input[type=file]{
+    display: none;
+}
+
+.gambar-upload{
+    background-image: url(../img/upload.png);
+
+}
+
+.d-none{
+    display: none;
+}
+
+.posisi-hasil-upload{
+    /* padding-top: 40px;
+    margin-top: 40px; */
+    line-height: 96px;
+}
